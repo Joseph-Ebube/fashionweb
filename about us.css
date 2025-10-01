@@ -1,0 +1,292 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    justify-content: center;
+    
+}
+.headermenu{
+    width: 100%;
+    height: 75px;
+    background-color: rgb(47, 10, 211);
+    display: flex;
+    justify-content: space-around;
+}
+#logo{
+    display: flex;
+    
+    }
+    #items{
+        display: flex;
+        justify-content: space-around;
+        gap: 30px;
+        margin-right: 120px;
+     
+    }
+    #loglink{
+        color: white;
+        font-size: 40px;
+        font-weight: 700;
+        display: flex;
+        margin-top: 15px;
+        margin-right: 400px;
+        text-decoration: none;
+        margin-left: 130px;
+    
+    }
+    #a1,#a2,#a3,#a4,#a5{
+        display: flex;
+        font-size: 16px;
+        margin-top: 30px;
+        text-decoration: none;
+        color: white;
+    
+    }
+    .pagestart{
+        height: 250px;
+        width: 100%;
+        display: flex;
+        background-color: black;
+        text-align: center;
+        color: lightblue;
+        text-transform: uppercase;
+        font-size: 40px;
+        
+    }
+    #textt{
+        display: flex;
+        margin-top: 90px;
+    }
+    #profile{
+        width: 100%;
+        height: 400px;
+        background-color: white;
+        display: flex;
+    }
+    #profileimg{
+        border-radius: 50%;
+       
+    }
+    #manager{
+        font-size: 20px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        display: flex;
+    }
+    #logotext2{
+        font-size: 35px;
+        text-align: center;
+        color: black;
+    }
+    #Hcaption0{
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 100;
+        font-size: 20px;
+        margin-left: 50px;
+       
+    }
+    #manage,#teamhead{
+        font-size: 45px;
+        text-align: center;
+        background-color:  black;
+        text-transform: uppercase;
+        color: lightblue;
+    }
+    #profiletext{
+        margin-top: 50px;
+        margin-left: 50px;
+
+    }
+    #ceotext{
+        display: flex;
+        flex-direction: column;
+        margin-top: 60px;
+    }
+    #col1, #col2 {
+        margin-top: 18px;
+    } 
+   #teama{
+    display: flex;
+    gap: 50px;
+    width: 100%;
+    height: 600px;
+   
+   }
+   #teamb{
+    display: flex;
+    gap: 50px;
+    width: 100%;
+    height: 600px;
+   }
+    #visions{
+        display: flex;
+        height: 300px;
+        background-color: rgb(24, 137, 175);
+        color: white;
+        gap: 50px;
+    }
+    #head{
+        margin-bottom: 20px;
+    }
+    #vis,#goal,#values{
+        margin-top: 50px;
+    }
+    #Hcaption{
+       
+        font-size: 20px;
+        margin-left: 50px;
+        margin-right: 10px;
+        margin-top: 20px;
+        text-transform: uppercase;
+        text-align: justify;
+    }
+    #shoetext,#bagtext,#dresstext,#jewelrytext{
+      
+        font-size: 10px;
+        text-align: center;
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    #teamimg{
+        height: 400px;
+        width: 400px;
+
+    }
+    #subcaption{
+        text-align: center;
+        font-size: 15px;
+        text-transform: uppercase;
+        margin-left: 50px;
+    }
+    #normaltext{
+        text-align: left;
+    }.footer{
+        background-color: black;
+        width: 100%;
+        height: 450px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        
+    }
+    
+    #sec1{
+        margin-top: 180px;
+        margin-bottom: 300px;
+        display: flex;
+        flex-direction: column;
+    }
+        
+    
+    #texthlink{
+       
+    }
+    #texth{
+        color: lightblue;
+        font-size: 40px;
+        font-weight: 900;
+        text-decoration: dotted;
+        text-transform: uppercase;
+        margin-top: 20px;
+    
+    }
+    #textb{
+        color: white;
+        font-size: 15px;
+        text-align: left;
+        margin-top: 10px;
+        
+        
+    }
+    #sec1icons{
+        display: flex;
+        margin-top: 20px;
+        
+        
+    }
+    #fbiconlink,#instaiconlink,#kediniconlink,#amazoniconlink{
+       
+    }
+    #socialicons{
+        display: flex;
+        width: 10px;
+        height: 10px;
+        filter: invert(100%);
+        margin-top: 20px;
+        margin-left: 45px;
+    
+    }
+    #socialimg{
+        width: 25px;
+        height: 25px;
+    
+    }
+    #menu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 120px;
+        margin-bottom: 190px;
+      
+    }
+    #menuhead{
+        color: white;
+        font-size: 40px;
+        display: flex;
+        font-weight: 900;
+        text-decoration: dotted;
+        margin-right: 20px;
+        margin-bottom: 30px;
+        text-transform: uppercase;
+    
+    }
+    #homelink,#abwtuslink,#Contactlink,#newslink,#servicelink{
+       display: flex;
+       font-size: 16px;
+       margin-bottom: 13px;
+       text-decoration: none;
+       color: white;
+    }
+    #library{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 60px;
+        margin-top: 200px;
+        margin-bottom: 200px;
+    }
+    #libraryhead{
+        color: white;
+        font-size: 40px;
+        display: flex;
+        font-weight: 900;
+        text-decoration: dotted;
+        margin-right: 20px;
+        text-transform: uppercase;
+    
+    }
+    #img12{
+        display: flex;
+        gap: 20px;
+        margin-top: 40px;
+    }
+    #img34{
+        display: flex;
+        margin-top: 20px;
+        gap: 20px;
+    
+    }
+    #baglib,#shoelib,#dresslib,#jewelib{
+        height: 100px;
+        width: 100px;
+    }
+        
+
+   
+   
+  
+    
+    
+  

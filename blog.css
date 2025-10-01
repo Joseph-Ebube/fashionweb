@@ -1,0 +1,284 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    justify-content: center;
+    
+}
+.headermenu{
+    width: 100%;
+    height: 75px;
+    background-color: rgb(47, 10, 211);
+    display: flex;
+    justify-content: space-around;
+}
+#logo{
+    display: flex;
+    
+    }
+    #items{
+        display: flex;
+        justify-content: space-around;
+        gap: 30px;
+        margin-right: 120px;
+     
+    }
+    #loglink{
+        color: white;
+        font-size: 40px;
+        font-weight: 700;
+        display: flex;
+        margin-top: 15px;
+        margin-right: 400px;
+        text-decoration: none;
+        margin-left: 130px;
+    
+    }
+    #a1,#a2,#a3,#a4,#a5{
+        display: flex;
+        font-size: 16px;
+        margin-top: 30px;
+        text-decoration: none;
+        color: white;
+    
+    }
+   
+    .pagestart{
+        height: 250px;
+        width: 100%;
+        display: flex;
+        background-color: black;
+        text-align: center;
+        color: lightblue;
+        text-transform: uppercase;
+        font-size: 40px;
+        
+    }
+    #textt{
+        display: flex;
+        margin-top: 90px;
+    }
+    #blogpage{
+        width: 100%;
+        height: 750px;
+        background-color: white;
+        display: flex;
+        gap: 50px;
+    }
+    #imgdiv,#bigdiv{
+       width: 500px;
+       height: 750px;
+       display: flex;
+    }
+    #bigdiv{
+        flex-direction: column;
+        gap: 10px;
+
+    }
+    
+    
+    #div1,#div2,#div3,#div4{
+        display: flex;
+        height: 150px;
+        width: 500px;
+        background-color: beige;
+    }
+    #subdiv1{
+        display: flex;
+        flex-direction: column;
+        height: 150px;
+        width: 350px;
+        font-size: 15px;
+        color: white;
+        
+    }
+        #blogimg{
+            width: 500px;
+            height: 750px;
+           
+        }
+        #blogimg2{
+            height: 150px;
+            width: 150px;
+            border-radius: 5px;
+            margin-left: 5px;
+        }
+        #heading{
+            font-size: 9;
+            color: black;
+            margin-left: 5px;
+        }
+        #subtext{
+            color: black;
+            font-size: 18px;
+            margin-left: 5px;
+        }
+        #bloglink1{
+            text-decoration: none;
+            margin-left: 5px;
+        }
+       
+        
+/*.button {
+    border-radius: 4px;
+    background-color: lightblue;
+    border: none;
+    color: black;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 150px;
+    height: 45px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin-left: 100px;
+  }
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  .button:hover span {
+    padding-right: 25px;
+    
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  .button:hover{
+    background-color: blue;
+    color: white;
+  }*/
+        .footer{
+            background-color: black;
+            width: 100%;
+            height: 450px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            
+        }
+        
+        #sec1{
+            margin-top: 180px;
+            margin-bottom: 300px;
+            display: flex;
+            flex-direction: column;
+        }
+            
+        
+        #texthlink{
+           
+        }
+        #texth{
+            color: lightblue;
+            font-size: 40px;
+            font-weight: 900;
+            text-decoration: dotted;
+            text-transform: uppercase;
+            margin-top: 20px;
+        
+        }
+        #textb{
+            color: white;
+            font-size: 15px;
+            text-align: left;
+            margin-top: 10px;
+            
+            
+        }
+        #sec1icons{
+            display: flex;
+            margin-top: 20px;
+            
+            
+        }
+        #fbiconlink,#instaiconlink,#kediniconlink,#amazoniconlink{
+           
+        }
+        #socialicons{
+            display: flex;
+            width: 10px;
+            height: 10px;
+            filter: invert(100%);
+            margin-top: 20px;
+            margin-left: 45px;
+        
+        }
+        #socialimg{
+            width: 25px;
+            height: 25px;
+        
+        }
+        #menu{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 120px;
+            margin-bottom: 190px;
+          
+        }
+        #menuhead{
+            color: white;
+            font-size: 40px;
+            display: flex;
+            font-weight: 900;
+            text-decoration: dotted;
+            margin-right: 20px;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+        
+        }
+        #homelink,#abwtuslink,#Contactlink,#newslink,#servicelink{
+           display: flex;
+           font-size: 16px;
+           margin-bottom: 13px;
+           text-decoration: none;
+           color: white;
+        }
+        #library{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-right: 60px;
+            margin-top: 200px;
+            margin-bottom: 200px;
+        }
+        #libraryhead{
+            color: white;
+            font-size: 40px;
+            display: flex;
+            font-weight: 900;
+            text-decoration: dotted;
+            margin-right: 20px;
+            text-transform: uppercase;
+        
+        }
+        #img12{
+            display: flex;
+            gap: 20px;
+            margin-top: 40px;
+        }
+        #img34{
+            display: flex;
+            margin-top: 20px;
+            gap: 20px;
+        
+        }
+        #baglib,#shoelib,#dresslib,#jewelib{
+            height: 100px;
+            width: 100px;
+        }

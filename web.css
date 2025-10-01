@@ -1,0 +1,676 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+/* Header Menu */
+.headermenu {
+    width: 100%;
+    height: auto; /* adjust height for wrapping */
+    background-color: rgb(47, 10, 211);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    flex-wrap: wrap; /* allow wrapping on small screens */
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+}
+
+#loglink {
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+/* Menu items */
+#items {
+    display: flex;
+    flex-wrap: wrap; /* allow wrapping */
+    gap: 10px; /* smaller gap for closer items */
+}
+
+#items a {
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+}
+
+/* Landing Page */
+#landingpage {
+    width: 100%;
+    min-height: 650px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+#text {
+    flex: 1 1 400px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    align-items: start;
+    justify-content: left;
+}
+
+#texthead {
+    color: lightblue;
+    font-size: clamp(30px, 6vw, 80px);
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+#textbody {
+    color: white;
+    font-size: clamp(14px, 1.2vw, 18px);
+    margin-bottom: 20px;
+}
+
+#clickbtn {
+    width: max-content;
+    align-self: flex-start; /* aligns with other left-aligned elements */
+    padding: 10px 16px;
+    background-color: yellow;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#clickbtn:hover {
+    background-color: blue;
+}
+
+#clickbtn a {
+    color: black;
+    text-decoration: none;
+}
+
+#clickbtn a:hover {
+    color: white;
+}
+
+#image1 {
+    flex: 1 1 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+#image1 img {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+}
+
+/* Section 1 */
+#section1header {
+    display: flex;
+    justify-content: center;
+    color: rgb(42, 17, 185);
+    text-transform: uppercase;
+    margin: 30px 0;
+    font-size: 20px;
+}
+
+.section1 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+#col1, #col2, #col3, #col4 {
+    flex: 1 1 250px; 
+    max-width: 280px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 10px;
+    box-shadow: 20px 20px 50px rgb(12, 12, 12);
+    padding-bottom: 10px;
+    align-items: center;
+    text-align: center;
+}
+
+#col1 img, #col2 img, #col3 img, #col4 img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+}
+
+#Hcaption {
+    color: white;
+    font-size: 24px;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+#shoetext, #bagtext, #dresstext, #jewelrytext {
+    color: white;
+    font-size: 14px;
+    margin: 10px;
+}
+
+#shoebtn, #bagbtn, #dressbtn, #jewelrybtn {
+    width: 50%;
+    min-width: 120px;
+    max-width: 160px;
+    height: 45px;
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+#shoebtn:hover, #bagbtn:hover, #dressbtn:hover, #jewelrybtn:hover {
+    background-color: yellow;
+    transform: scale(1.05);
+}
+
+#shoelink, #baglink, #dresslink, #jewelrylink {
+    color: white;
+    text-decoration: none;
+}
+
+#shoelink:hover, #baglink:hover, #dresslink:hover, #jewelrylink:hover {
+    color: black;
+}
+
+/* Media Queries */
+/* @media screen and (max-width: 1024px) {
+   #landingpage {
+        flex-direction: column;
+    }
+
+    #text {
+        margin: 10px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    #image1 {
+        margin: 10px;
+    }
+}*/
+
+@media screen and (max-width: 768px) {
+    #items {
+        justify-content: center; /* center menu links */
+        gap: 8px; /* closer links */
+    }
+#text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#clickbtn {
+  width: 60%;
+  margin: 0 auto;
+}
+
+
+    #loglink {
+        font-size: 32px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    #text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    }
+
+    #clickbtn {
+    width: 60%;
+    margin: 0 auto;
+    }
+
+    #texthead {
+        font-size: clamp(24px, 8vw, 50px);
+    }
+
+    #textbody {
+        font-size: 14px;
+    }
+    
+
+    #items a {
+        font-size: 14px;
+    }
+
+    #col1, #col2, #col3, #col4 {
+        flex: 1 1 90%;
+        max-width: 90%;
+    }
+}
+
+
+
+
+.section2 {
+    background-color: black;
+    width: 100%;
+    min-height: 400px;
+    display: flex; 
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+#vid1 {
+    flex: 1 1 300px;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+    margin: 10px;
+    padding-left: 10px;
+}
+
+#whychooseus {
+    flex: 1 1 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+#th {
+    color: lightblue;
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin-top: 20px;
+    text-decoration: dotted;
+    text-align: center;
+}
+
+#tb {
+    color: white;
+    margin-top: 30px;  
+    text-align: center;
+}
+
+#section2btn {
+    width: 150px;
+    height: 45px;
+    background-color: yellow;
+    margin-top: 30px;
+    border: none;
+    border-radius: 10px;
+}
+
+#section2btn:hover {
+    background-color: blue;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#section2link {
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    line-height: 45px;
+}
+
+#section2link:hover {
+    color: white;
+}
+
+#section4 {
+    width: 100%;
+    min-height: 400px;
+    display: flex;
+    flex-wrap: wrap;   /* ✅ allows multiple rows */
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 20px;
+}
+
+
+.testimonial1,
+.testimonial2,
+.testimonial3 {
+    width: 350px;
+    height: 200px;
+    background-color: blue;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+   /*  flex: 0 0 auto; prevents flexbox from shrinking them */
+}
+
+.testimonial1:hover,
+.testimonial2:hover,
+.testimonial3:hover {
+    transform: scale(1.05);
+}
+
+
+#shoeicon,
+#jewelryicon,
+#dressicon {
+    width: 60px;
+    height: 60px;
+    margin-top: -10px;
+    filter: invert(100%);
+}
+
+#shoeiconheader,
+#dressiconheader,
+#jewelryiconheader {
+    text-align: center;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+#reveiwtext1,
+#reveiwtext2,
+#reveiwtext3 {
+    text-align: center;
+    margin: 10px 20px;
+}
+
+.section5 {
+    min-height: 300px;
+    width: 100%;
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+}
+
+#form header {
+    color: white;
+    display: flex;
+}
+
+#formtextbody {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#username {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    border-radius: 4px;
+    background-color: #eeea07;
+    border: none;
+    color: #FFFFFF;
+    font-size: 20px;
+    width: 150px;
+    height: 45px;
+    transition: all 0.5s;
+    cursor: pointer;
+    text-align: center;
+}
+
+.button span {
+    position: relative;
+    transition: 0.5s;
+}
+
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button:hover span {
+    padding-right: 25px;
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.button:hover {
+    background-color: black;
+}
+
+#sublink {
+    border: none;
+    text-decoration: none;
+}
+
+#sublink:hover {
+    color: white;
+}
+
+input {
+    height: 40px;
+    width: 100%;
+    max-width: 300px;
+    border: none;
+    border-radius: 3px;
+    padding-left: 12px;
+}
+
+input::placeholder {
+    color: blue;
+}
+
+#headerform {
+    font-size: 1.8rem;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 800;
+    text-align: center;
+}
+
+.footer {
+    background-color: black;
+    width: 100%;
+    min-height: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 30px 10px;
+    gap: 40px;
+}
+
+#sec1 {
+    flex: 1 1 250px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+#texth {
+    color: lightblue;
+    font-size: 2rem;
+    font-weight: 900;
+    text-decoration: dotted;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+#textb {
+    color: white;
+    font-size: 15px;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 20px; /* ✅ space below text */
+}
+
+#sec1icons {
+    display: flex;
+    margin-top: 10px; /* smaller top margin since we already added bottom above */
+    gap: 15px;        /* ✅ spacing between individual icons */
+}
+
+
+#socialicons {
+    display: flex;
+    gap: 10px;
+    filter: invert(100%);
+}
+
+#socialimg {
+    width: 25px;
+    height: 25px;
+}
+
+#menu {
+    flex: 1 1 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#menuhead {
+    color: white;
+    font-size: 2rem;
+    font-weight: 900;
+    text-decoration: dotted;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#homelink,
+#abwtuslink,
+#Contactlink,
+#newslink,
+#servicelink {
+    font-size: 16px;
+    margin-bottom: 13px;
+    text-decoration: none;
+    color: white;
+}
+
+#library {
+    flex: 1 1 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#libraryhead {
+    color: white;
+    font-size: 2rem;
+    font-weight: 900;
+    text-decoration: dotted;
+    text-transform: uppercase;
+}
+
+#img12,
+#img34 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#baglib,
+#shoelib,
+#dresslib,
+#jewelib {
+    height: 100px;
+    width: 100px;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 1024px) {
+    #th {
+        font-size: 2rem;
+    }
+    .testimonial1, .testimonial2, .testimonial3 {
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .section2 {
+        flex-direction: column;
+    }
+    #vid1, #whychooseus {
+        max-width: 100%;
+    }
+    #section4 {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+    #menuhead, #libraryhead, #texth {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #th {
+        font-size: 1.5rem;
+    }
+    #tb {
+        font-size: 14px;
+    }
+    input {
+        width: 95%;
+    }
+    .button {
+        font-size: 16px;
+        width: 130px;
+        height: 40px;
+    }
+}
+
+
+
+/*this is a single line comment*/
+/*this
+is a multilne comment*/

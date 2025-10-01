@@ -1,0 +1,260 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    justify-content: center;
+    
+}
+.headermenu{
+    width: 100%;
+    height: 75px;
+    background-color: rgb(47, 10, 211);
+    display: flex;
+    justify-content: space-around;
+}
+#logo{
+    display: flex;
+    
+    }
+    #items{
+        display: flex;
+        justify-content: space-around;
+        gap: 30px;
+        margin-right: 120px;
+     
+    }
+    #loglink{
+        color: white;
+        font-size: 40px;
+        font-weight: 700;
+        display: flex;
+        margin-top: 15px;
+        margin-right: 400px;
+        text-decoration: none;
+        margin-left: 130px;
+    
+    }
+    #a1,#a2,#a3,#a4,#a5{
+        display: flex;
+        font-size: 16px;
+        margin-top: 30px;
+        text-decoration: none;
+        color: white;
+    
+    }
+    .pagestart{
+        height: 250px;
+        width: 100%;
+        display: flex;
+        background-color: black;
+        text-align: center;
+        color: lightblue;
+        text-transform: uppercase;
+        font-size: 40px;
+        
+    }
+    #textt{
+        display: flex;
+        margin-top: 90px;
+
+    }
+    input{
+        display: flex;
+        flex-direction: column;
+        height: 40px;
+        width: 600px;
+        padding-left: 20px;
+        margin-left: 170px;
+        margin-top: 10px;
+        border-radius: 5px;
+    }
+    #comments{
+        width: 620px;
+        height: 100px;
+        padding-top: 15px;
+        margin-top: 10px;
+        margin-left: 170px;
+        color: blue;
+
+    }
+    #maindiv{
+        display: flex;
+        gap: 50px;
+        font-size: 20px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    #div1,#div2,#div3{
+        height: 200px;
+        width: 300px;
+        border-radius: 10px;
+        background-color: beige;
+        text-align: center;
+       
+    }
+    #img1,#img2{
+        margin-top: 30px;
+        width: 30px;
+        height: 30px;
+    }
+    #location,#E-mail,#notext{
+        margin-top: 15px;
+
+    }
+    .form{
+        display: flex;
+        height: 350px;
+        flex-direction: column;
+        margin-top: 20px;
+        background-color: blue;
+        
+    }
+    input::placeholder{
+        color: blue;
+    }
+    
+    #contact{
+        display: flex;
+        gap: 0px;
+        flex-direction: column;
+       
+    }
+    #clickbtn{
+        width: 145px;
+        height: 45px;
+        background-color: yellow;
+        color: black;
+        text-decoration: none;
+        margin-left: 170px;
+        margin-top: 10px;
+    }
+    #a6{
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+    #clickbtn:hover{
+        background-color: white;
+        border: none;
+        border-radius: 5px;
+     
+    }
+    .footer{
+        background-color: black;
+        width: 100%;
+        height: 450px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        
+    }
+    
+    #sec1{
+        margin-top: 180px;
+        margin-bottom: 300px;
+        display: flex;
+        flex-direction: column;
+    }
+        
+    
+    #texthlink{
+       
+    }
+    #texth{
+        color: lightblue;
+        font-size: 40px;
+        font-weight: 900;
+        text-decoration: dotted;
+        text-transform: uppercase;
+        margin-top: 20px;
+    
+    }
+    #textb{
+        color: white;
+        font-size: 15px;
+        text-align: left;
+        margin-top: 10px;
+        
+        
+    }
+    #sec1icons{
+        display: flex;
+        margin-top: 20px;
+        
+        
+    }
+    #fbiconlink,#instaiconlink,#kediniconlink,#amazoniconlink{
+       
+    }
+    #socialicons{
+        display: flex;
+        width: 10px;
+        height: 10px;
+        filter: invert(100%);
+        margin-top: 20px;
+        margin-left: 45px;
+    
+    }
+    #socialimg{
+        width: 25px;
+        height: 25px;
+    
+    }
+    #menu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 120px;
+        margin-bottom: 190px;
+      
+    }
+    #menuhead{
+        color: white;
+        font-size: 40px;
+        display: flex;
+        font-weight: 900;
+        text-decoration: dotted;
+        margin-right: 20px;
+        margin-bottom: 30px;
+        text-transform: uppercase;
+    
+    }
+    #homelink,#abwtuslink,#Contactlink,#newslink,#servicelink{
+       display: flex;
+       font-size: 16px;
+       margin-bottom: 13px;
+       text-decoration: none;
+       color: white;
+    }
+    #library{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 60px;
+        margin-top: 200px;
+        margin-bottom: 200px;
+    }
+    #libraryhead{
+        color: white;
+        font-size: 40px;
+        display: flex;
+        font-weight: 900;
+        text-decoration: dotted;
+        margin-right: 20px;
+        text-transform: uppercase;
+    
+    }
+    #img12{
+        display: flex;
+        gap: 20px;
+        margin-top: 40px;
+    }
+    #img34{
+        display: flex;
+        margin-top: 20px;
+        gap: 20px;
+    
+    }
+    #baglib,#shoelib,#dresslib,#jewelib{
+        height: 100px;
+        width: 100px;
+    }
