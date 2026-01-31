@@ -1,94 +1,167 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>service</title>   
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-    <link rel="stylesheet" href="service.css">
-  </head>
-  <body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Service | Ejoe-Store</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans bg-white text-gray-800">
 
-    <div class="headermenu">
-   <div id="logo">
-      <h3 id="logotext"><a href="http://127.0.0.1:5501/structured%20web/web.html" id="loglink">Ejoe-Store</a></h3>
-   </div>
-   <div id="items">
-      <a href="http://127.0.0.1:5501/structured%20web/web.html" id="a1" >Home</a>
-      <a href="" id="a2" active>Product</a>
-      <a href="http://127.0.0.1:5501/structured%20web/about%20us.html" id="a3">About Us</a>
-      <a href="http://127.0.0.1:5501/structured%20web/contact%20us.html" id="a4">Contact Us</a>
-      <a href="http://127.0.0.1:5501/structured%20web/blog.html" id="a5">Blog</a>
-   </div>
+  <!-- ================= NAVBAR ================= -->
+  <nav class="bg-blue-700 text-white">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-2xl md:text-3xl font-bold text-blue-200">Ejoe-Store</h1>
 
- </div>
- <div class="pagestart">
-  <h3 id="textt">our products</h3>
-</div><br>
-<div class="section1">
-  
-  <div id="col1">
-    <img src="/structured web/image/shoe1.jpg" alt="shoeshow" id="shoeimage">
-    <h4 id="Hcaption">Shoe</h4>
-    <p id="shoetext">Brands selected withyou in mind from china,India,vietnam, Indonesia and Africa. place orders on any brand or item and get it delivered at your door step. grab yours now!</p>
-    <button id="shoebtn"><a href="" id="shoelink">add to cart</a></button>
-  </div>
-  <div id="col2"> 
-  <img src="/structured web/image/bag1.jpg" alt="bagsection" id="bagimage">
-  <h4 id="Hcaption">Hand bags</h4>
-  <p id="bagtext">Choice brands collections from China, Italy, India, Brazil, Korea, Russia and Africa. place orders on any brand or item and get it delivered at your door step. grab yours now! </p>
-  <button id="bagbtn"><a href="" id="baglink">add to cart</a></button>
-  </div>
-  <div id="col3">
-    <img src="/structured web/image/dress1.jpg" alt="dressshow" id="dressimage">
-    <h4 id="Hcaption">gown</h4>
-    <p id="dresstext"> 2,000,000 brand collections from  china,India,vietnam, bangladesh and Africa. place orders on any brand or item and get it delivered at your door step. grab yours now!</p>
-    <button id="dressbtn"><a href="" id="dresslink">add to cart</a></button>
-  </div>
- 
-  <div id="col4">
-    <img src="/structured web/image/jewelry1.jpg" alt="jewelryshow" id="jewelryimage">
-    <h4 id="Hcaption">Jewelry</h4>
-    <p id="jewelrytext">Assorted brands from china,India,united states,Indonesia and Africa. place orders on any brand or item and get it delivered at your door step. grab yours now!</p>
-    <button id="jewelrybtn"><a href="" id="jewelrylink">add to cart</a></button>
-  </div>
-</div> 
-<div class="footer">
-  <div id="sec1">
-      <h1 id="texth">e-joe Store</h1>
-      <strong id="textb">over three million collections for <br> you 
-        to pick from with fast delivery <br> services that spans across nations,
-          <br>Experience exquisite elegance  with <br>
-          Ejoe-Fashion</strong>
-    <div id="socialicons">
-     <a href="" id="fbiconlink"><img src="/structured web/image/facebook icon.png" id="socialimg" alt="fbiconshow"></a>
-     <a href="" id="instaiconlink"><img src="/structured web/image/instagram icon.png" id="socialimg" alt="instaiconshow"></a>
-     <a href="" id="kediniconlink"><img src="/structured web/image/linkedin icon.png" id="socialimg"  alt="kediniconshow"></a>
-     <a href="" id="amazoniconlink"><img src="/structured web/image/amazon icon.png" id="socialimg" alt="amazoniconshow"></a>
+      <!-- Desktop Menu -->
+      <div class="hidden md:flex gap-6 font-semibold">
+        <a href="index.html" class="hover:text-blue-200">Home</a>
+        <a href="service.html" class="text-blue-200">Product</a>
+        <a href="about-us.html" class="hover:text-blue-200">About Us</a>
+        <a href="contact-us.html" class="hover:text-blue-200">Contact Us</a>
+        <a href="blog.html" class="hover:text-blue-200">Blog</a>
+      </div>
+
+      <!-- Mobile Toggle -->
+      <div class="md:hidden">
+        <button id="menu-btn" class="focus:outline-none">
+          <svg class="w-6 h-6 text-blue-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
     </div>
 
-  </div>
-  <div id="menu">
-    <h1 id="menuhead">QuickLinks</h1>
-    <a href="http://127.0.0.1:5501/structured%20web/web.html" id="homelink">Home</a>
-    <a href="" id="servicelink">Services</a>
-    <a href="http://127.0.0.1:5501/structured%20web/about%20us.html" id="abwtuslink">About US</a>
-    <a href="http://127.0.0.1:5501/structured%20web/contact%20us.html" id="Contactlink">Contact</a>
-    <a href="http://127.0.0.1:5501/structured%20web/blog.html" id="newslink">News</a>
-  </div>
-  <div id="library">
-    <h1 id="libraryhead">Gallery</h1>
-    <div id="img12"><img src="/structured web/image/bag1.webp" id="baglib" alt="bagshow">
-      <img src="/structured web/image/shoe2.webp" id="shoelib" alt="shoshow">
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden px-4 pb-4 md:hidden bg-blue-700 flex flex-col gap-4">
+      <a href="index.html" class="hover:text-blue-200">Home</a>
+      <a href="service.html" class="text-blue-200">Product</a>
+      <a href="about-us.html" class="hover:text-blue-200">About Us</a>
+      <a href="contact-us.html" class="hover:text-blue-200">Contact Us</a>
+      <a href="blog.html" class="hover:text-blue-200">Blog</a>
     </div>
-    <div id="img34"><img src="/structured web/image/dress2.webp" id="dresslib" alt="dreshow">
-      <img src="/structured web/image/jewelry1.jpg" id="jewelib" alt="jewelshow">
+  </nav>
+
+  <!-- ================= PAGE TITLE ================= -->
+  <section class="bg-black h-56 flex items-center justify-center">
+    <h2 class="text-4xl md:text-5xl uppercase text-blue-200 font-bold tracking-wide animate-pulse">
+      Our Products
+    </h2>
+  </section>
+
+  <!-- ================= PRODUCTS ================= -->
+  <section class="max-w-7xl mx-auto px-6 py-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+    
+    <!-- Product 1 -->
+    <div class="bg-black rounded-lg shadow-lg flex flex-col items-center p-4 hover:scale-105 transition">
+      <img src="image/image2.jpg" alt="Shoe" class="w-full h-48 object-cover rounded-lg">
+      <h4 class="text-white text-2xl font-bold mt-4 uppercase">Shoe</h4>
+      <p class="text-white text-sm text-center mt-2">
+        Brands selected with you in mind from China, India, Vietnam, Indonesia and Africa. Place orders on any brand or item and get it delivered at your doorstep. Grab yours now!
+      </p>
+      <button class="mt-4 px-6 py-2 bg-blue-600 rounded text-white hover:bg-yellow-400 hover:text-black transition">
+        <a href="#">Add to Cart</a>
+      </button>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="bg-black rounded-lg shadow-lg flex flex-col items-center p-4 hover:scale-105 transition">
+      <img src="image/image3.jpg" alt="Handbags" class="w-full h-48 object-cover rounded-lg">
+      <h4 class="text-white text-2xl font-bold mt-4 uppercase">Hand Bags</h4>
+      <p class="text-white text-sm text-center mt-2">
+        Choice brand collections from China, Italy, India, Brazil, Korea, Russia and Africa. Place orders on any brand or item and get it delivered at your doorstep. Grab yours now!
+      </p>
+      <button class="mt-4 px-6 py-2 bg-blue-600 rounded text-white hover:bg-yellow-400 hover:text-black transition">
+        <a href="#">Add to Cart</a>
+      </button>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="bg-black rounded-lg shadow-lg flex flex-col items-center p-4 hover:scale-105 transition">
+      <img src="image/image4.jpg" alt="Gown" class="w-full h-48 object-cover rounded-lg">
+      <h4 class="text-white text-2xl font-bold mt-4 uppercase">Gown</h4>
+      <p class="text-white text-sm text-center mt-2">
+        2,000,000 brand collections from China, India, Vietnam, Bangladesh and Africa. Place orders on any brand or item and get it delivered at your doorstep. Grab yours now!
+      </p>
+      <button class="mt-4 px-6 py-2 bg-blue-600 rounded text-white hover:bg-yellow-400 hover:text-black transition">
+        <a href="#">Add to Cart</a>
+      </button>
+    </div>
+
+    <!-- Product 4 -->
+    <div class="bg-black rounded-lg shadow-lg flex flex-col items-center p-4 hover:scale-105 transition">
+      <img src="image/image5.jpg" alt="Jewelry" class="w-full h-48 object-cover rounded-lg">
+      <h4 class="text-white text-2xl font-bold mt-4 uppercase">Jewelry</h4>
+      <p class="text-white text-sm text-center mt-2">
+        Assorted brands from China, India, United States, Indonesia and Africa. Place orders on any brand or item and get it delivered at your doorstep. Grab yours now!
+      </p>
+      <button class="mt-4 px-6 py-2 bg-blue-600 rounded text-white hover:bg-yellow-400 hover:text-black transition">
+        <a href="#">Add to Cart</a>
+      </button>
+    </div>
+
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="bg-black text-white py-16">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 px-6">
+
+      <div>
+        <h3 class="text-blue-200 text-3xl font-bold uppercase mb-4">E-Joe Store</h3>
+        <p class="text-sm leading-relaxed">
+          Over three million collections for you to pick from with fast delivery services that span across nations. Experience exquisite elegance with Ejoe-Fashion.
+        </p>
+              <div class="flex gap-4 mt-6">
+                <a href="#" class="transform transition duration-300 hover:scale-110">
+                  <img src="image/image8.png" class="w-6 h-6 rounded bg-blue-400" alt="Facebook">
+                </a>
+                <a href="#" class="transform transition duration-300 hover:scale-110">
+                  <img src="image/image9.png" class="w-6 h-6 rounded bg-blue-400" alt="Instagram">
+                </a>
+                <a href="#" class="transform transition duration-300 hover:scale-110">
+                  <img src="image/image10.png" class="w-6 h-6 rounded bg-blue-400" alt="LinkedIn">
+                </a>
+                <a href="#" class="transform transition duration-300 hover:scale-110">
+                  <img src="image/image11.png" class="w-6 h-6 rounded bg-blue-400" alt="Amazon">
+                </a>
+              </div>
+      </div>
+
+
+
+      <div>
+        <h3 class="text-2xl font-bold mb-4 uppercase">Quick Links</h3>
+        <ul class="space-y-2">
+          <li><a href="index.html" class="hover:text-blue-200">Home</a></li>
+          <li><a href="service.html" class="hover:text-blue-200">Service</a></li>
+          <li><a href="about-us.html" class="hover:text-blue-200">About Us</a></li>
+          <li><a href="contact-us.html" class="hover:text-blue-200">Contact</a></li>
+          <li><a href="blog.html" class="hover:text-blue-200">News</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="text-2xl font-bold mb-4 uppercase">Gallery</h3>
+        <div class="grid grid-cols-2 gap-4">
+          <img src="image/gal1.webp" class="w-full h-24 object-cover rounded" alt="bag">
+          <img src="image/gal2.webp" class="w-full h-24 object-cover rounded" alt="shoe">
+          <img src="image/gal3.png" class="w-full h-24 object-cover rounded" alt="dress">
+          <img src="image/gal4.png" class="w-full h-24 object-cover rounded" alt="jewelry">
+        </div>
+      </div>
 
     </div>
-  </div>
-  
-</div>
- 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  </body>
+  </footer>
+
+  <script>
+    // Mobile toggle
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+
+</body>
 </html>

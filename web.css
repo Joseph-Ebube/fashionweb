@@ -18,32 +18,25 @@
     flex-wrap: wrap; /* allow wrapping on small screens */
 }
 
-#logo {
-    display: flex;
-    align-items: center;
+
+.navbar-brand {
+    color: lightblue;
+    font-size: 40px;
+    font-weight: 700;
 }
 
-#loglink {
+.nav-link {
     color: white;
-    font-size: 40px;
+    font-size: 20px;
     font-weight: 700;
     text-decoration: none;
     margin-right: 20px;
 }
 
 /* Menu items */
-#items {
-    display: flex;
-    flex-wrap: wrap; /* allow wrapping */
-    gap: 10px; /* smaller gap for closer items */
-}
 
-#items a {
-    font-size: 16px;
-    color: white;
-    text-decoration: none;
-    padding: 8px 12px;
-}
+
+
 
 /* Landing Page */
 #landingpage {

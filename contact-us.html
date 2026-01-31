@@ -1,12 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blog</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact us</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Tailwind Animations -->
+<style>
+  @keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(10px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+
+  .animate-fadeIn {
+    animation: fadeIn 0.6s ease-in-out;
+  }
+
+  .bg-beige {
+    background-color: beige;
+  }
+</style>
 </head>
-<body class="bg-white font-sans">
+<body class="font-sans bg-white text-gray-800">
+
   <!-- ================= NAVBAR ================= -->
   <nav class="bg-blue-700 text-white">
     <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
@@ -17,8 +34,8 @@
         <a href="index.html" class="hover:text-blue-200">Home</a>
         <a href="service.html" class="hover:text-blue-200">Product</a>
         <a href="about-us.html" class="hover:text-blue-200">About Us</a>
-        <a href="contact-us.html" class="hover:text-blue-200">Contact Us</a>
-        <a href="blog.html" class="text-blue-200">Blog</a>
+        <a href="contact-us.html" class="text-blue-200">Contact Us</a>
+        <a href="blog.html" class="hover:text-blue-200">Blog</a>
       </div>
 
       <!-- Mobile Toggle -->
@@ -36,71 +53,57 @@
       <a href="index.html" class="hover:text-blue-200">Home</a>
       <a href="service.html" class="hover:text-blue-200">Product</a>
       <a href="about-us.html" class="hover:text-blue-200">About Us</a>
-      <a href="contact-us.html" class="hover:text-blue-200">Contact Us</a>
-      <a href="blog.html" class="text-blue-200">Blog</a>
+      <a href="contact-us.html" class="text-blue-200">Contact Us</a>
+      <a href="blog.html" class="hover:text-blue-200">Blog</a>
     </div>
   </nav>
 
   <!-- ================= PAGE TITLE ================= -->
   <section class="bg-black h-56 flex items-center justify-center">
     <h2 class="text-4xl md:text-5xl uppercase text-blue-200 font-bold tracking-wide animate-pulse">
-     OUR Blog
+      contact Us
     </h2>
   </section>
 
-  <!-- Blog Page -->
-  <div id="blogpage" class="flex flex-col lg:flex-row gap-8 container mx-auto py-8">
+  <div class="container mx-auto px-4 mt-12 mb-12 flex flex-col items-center">
+  <!-- Contact Cards Grid -->
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-6xl">
+    <div class="bg-beige rounded-lg text-center p-6 flex flex-col items-center shadow-lg hover:scale-105 transition-transform duration-300">
+      <div class="flex gap-4 items-center">
+        <img src="image/image12.png" class="w-8 h-8 mt-4" alt="">
+        <img src="image/image13.png" class="w-8 h-8 mt-4" alt="">
+      </div>
 
-    <!-- Left Image -->
-    <div id="imgdiv" class="flex-shrink-0 lg:w-1/2">
-      <img src="image/long.png" alt="" class="w-full h-auto rounded-lg shadow-lg animate-fade-in">
+      <h3 class="mt-4 text-lg md:text-xl">09131698272 <br> 08065748347</h3>
     </div>
 
-    <!-- Blog List -->
-    <div id="bigdiv" class="flex flex-col gap-6 lg:w-1/2">
+    <div class="bg-beige rounded-lg text-center p-6 flex flex-col items-center shadow-lg hover:scale-105 transition-transform duration-300">
+      <img src="image/image14.png" class="w-8 h-8 mt-4" alt="">
+      <p class="mt-4 text-lg md:text-xl">ugonnajosephe@gmail.com</p>
+    </div>
 
-      <!-- Blog Entry 1 -->
-      <div id="div1" class="flex gap-4 bg-beige p-4 rounded-lg shadow hover:scale-105 transition-transform duration-300">
-        <img src="image/blog1.png" alt="" id="blogimg2" class="w-36 h-36 object-cover rounded-md animate-fade-in">
-        <div id="subdiv1" class="flex flex-col justify-center">
-          <h2 id="heading" class="text-xl font-semibold mb-1 animate-fade-in">How to Care for Delicate Fabrics</h2>
-          <p id="subtext" class="text-gray-700 animate-fade-in">Silk and Lace Tips, make items last long</p>
-          <a id="bloglink1" href="https://www.wood-blocks.com/blog/tips-on-how-to-care-for-delicate-fabrics-silk-lace-and-satin#:~:text=tear%20over%20time-,To%20care%20for%20delicate%20fabrics%20like%20silk%2C%20lace%2C%20and%20satin,lowest%20heat%20setting%20when%20ironing." class="text-blue-600 hover:text-blue-800 mt-2 animate-fade-in">learn more...</a>
-        </div>
-      </div>
-
-      <!-- Blog Entry 2 -->
-      <div id="div2" class="flex gap-4 bg-beige p-4 rounded-lg shadow hover:scale-105 transition-transform duration-300">
-        <img src="image/blog3.png" alt="" id="blogimg2" class="w-36 h-36 object-cover rounded-md animate-fade-in">
-        <div id="subdiv1" class="flex flex-col justify-center">
-          <h2 id="heading" class="text-xl font-semibold mb-1 animate-fade-in">Trends for Next Season</h2>
-          <p id="subtext" class="text-gray-700 animate-fade-in">What to Expect. Look Great, Spend Less.</p>
-          <a id="bloglink1" href="https://www.glamour.com/story/2025-fashion-trends" class="text-blue-600 hover:text-blue-800 mt-2 animate-fade-in">learn more...</a>
-        </div>
-      </div>
-
-      <!-- Blog Entry 3 -->
-      <div id="div3" class="flex gap-4 bg-beige p-4 rounded-lg shadow hover:scale-105 transition-transform duration-300">
-        <img src="image/hanger.png" alt="" id="blogimg2" class="w-36 h-36 object-cover rounded-md animate-fade-in">
-        <div id="subdiv1" class="flex flex-col justify-center">
-          <h2 id="heading" class="text-xl font-semibold mb-1 animate-fade-in">Color Trends This Year</h2>
-          <p id="subtext" class="text-gray-700 animate-fade-in">See which shades are hot right now.</p>
-          <a id="bloglink1" href="" class="text-blue-600 hover:text-blue-800 mt-2 animate-fade-in">learn more...</a>
-        </div>
-      </div>
-
-      <!-- Blog Entry 4 -->
-      <div id="div4" class="flex gap-4 bg-beige p-4 rounded-lg shadow hover:scale-105 transition-transform duration-300">
-        <img src="image/blog4.png" alt="" id="blogimg2" class="w-36 h-36 object-cover rounded-md animate-fade-in">
-        <div id="subdiv1" class="flex flex-col justify-center">
-          <h2 id="heading" class="text-xl font-semibold mb-1 animate-fade-in">Vintage Shopping</h2>
-          <p id="subtext" class="text-gray-700 animate-fade-in">Tips for Finding Hidden Gems.</p>
-          <a id="bloglink1" href="" class="text-blue-600 hover:text-blue-800 mt-2 animate-fade-in">learn more...</a>
-        </div>
-      </div>
-
+    <div class="bg-beige rounded-lg text-center p-6 flex flex-col items-center shadow-lg hover:scale-105 transition-transform duration-300">
+      <img src="image/image15.png" class="w-8 h-8 mt-4" alt="">
+      <p class="mt-4 text-lg md:text-xl">Along Ibrahim Yaro Way beside PSG Hotel</p>
     </div>
   </div>
+
+ <!-- Form Section Full Width with Blue Background -->
+  <div class="w-full mt-12 px-4 md:px-0">
+    <form id="contact" class="flex flex-col gap-4 max-w-3xl mx-auto bg-blue-600 p-6 rounded-lg animate-fadeIn">
+      <input type="text" placeholder="Enter your Name" class="h-10 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-100 transition-all w-full">
+      <input type="email" placeholder="Enter your E-mail" class="h-10 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-100 transition-all w-full">
+      <textarea name="comments" id="comments" class="px-4 py-3 rounded-md resize-none h-24 focus:outline-none focus:ring-2 focus:ring-blue-400 transition-all w-full">Hey... your comment!</textarea>
+      <button type="submit" class="bg-yellow-400 text-black rounded-md h-12 hover:bg-white transition-colors font-bold uppercase w-32 mx-auto">
+        Submit
+      </button>
+    </form>
+  </div>
+</div>
+
+
+
+
   <!-- ================= FOOTER ================= -->
   <footer class="bg-black text-white py-16">
     <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 px-6">

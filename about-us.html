@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About Us | Ejoe-Store</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="font-sans bg-white text-gray-800">
+
+<!-- ================= NAVBAR ================= -->
+<nav class="bg-blue-700 text-white">
+  <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+    <h1 class="text-2xl md:text-3xl font-bold text-blue-200">Ejoe-Store</h1>
+
+    <!-- ✅ Mobile Toggle Button (ADDED) -->
+    <button id="menu-btn" class="md:hidden text-3xl focus:outline-none">
+      ☰
+    </button>
+
+    <!-- Desktop Menu (UNCHANGED) -->
+    <div class="hidden md:flex gap-6 font-semibold">
+      <a href="index.html" class="hover:text-blue-200">Home</a>
+      <a href="service.html" class="hover:text-blue-200">Product</a>
+      <a href="about-us.html" class="text-blue-200">About Us</a>
+      <a href="contact-us.html" class="hover:text-blue-200">Contact Us</a>
+      <a href="blog.html" class="hover:text-blue-200">Blog</a>
+    </div>
+  </div>
+
+  <!-- ✅ Mobile Menu (ADDED – same links, no content change) -->
+  <div id="mobile-menu" class="hidden md:hidden px-4 pb-4 font-semibold space-y-3">
+    <a href="index.html" class="block hover:text-blue-200">Home</a>
+    <a href="service.html" class="block hover:text-blue-200">Product</a>
+    <a href="about-us.html" class="block text-blue-200">About Us</a>
+    <a href="contact-us.html" class="block hover:text-blue-200">Contact Us</a>
+    <a href="blog.html" class="block hover:text-blue-200">Blog</a>
+  </div>
+</nav>
+
+
+<!-- ================= PAGE TITLE ================= -->
+<section class="bg-black h-56 flex items-center justify-center">
+  <h2 class="text-4xl md:text-5xl uppercase text-blue-200 font-bold tracking-wide animate-pulse">
+    About Us
+  </h2>
+</section>
+
+<!-- ================= CEO PROFILE ================= -->
+<section class="max-w-7xl mx-auto px-6 py-16">
+  <div class="flex flex-col md:flex-row items-center gap-10">
+
+    <img src="image/ceo.png"
+      class="w-100 h-100 rounded-full object-cover shadow-lg hover:scale-105 transition" />
+
+    <div class="text-center md:text-left">
+      <h4 class="uppercase text-xl font-semibold">Chief Jo</h4>
+      <span class="text-blue-600 font-bold">CEO</span>
+
+      <p class="mt-6 leading-relaxed text-gray-700 max-w-xl">
+        CHIEF JO is a high school leaver aspiring programmer, soon to be professional web
+        developer and content creator. He is dedicated and committed to using his unique
+        skills to impact humanity. He is the proud developer of this website as his first
+        practical project through thick and thin with the help of his professional teacher
+        and mentor, MR Niyi.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= TEAM ================= -->
+<section class="bg-gray-100 py-16">
+  <h2 class="text-center text-4xl uppercase text-blue-700 font-bold mb-12">
+    Our Team
+  </h2>
+
+  <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 px-6">
+
+    <!-- Member -->
+    <div class="text-center hover:scale-105 transition">
+      <img src="image/fash.png" class="w-full h-72 object-contain rounded-lg shadow" />
+      <h4 class="mt-4 uppercase font-semibold">Phoenix Lee Jang</h4>
+      <span class="text-sm text-blue-600 font-bold">Fashion Model</span>
+    </div>
+
+    <div class="text-center hover:scale-105 transition">
+      <img src="image/itwoman.png" class="w-full h-72 object-contain rounded-lg shadow" />
+      <h4 class="mt-4 uppercase font-semibold">Ore Bitrus</h4>
+      <span class="text-sm text-blue-600 font-bold">IT Manager</span>
+    </div>
+
+    <div class="text-center hover:scale-105 transition">
+      <img src="image/team1.png" class="w-full h-72 object-contain rounded-lg shadow" />
+      <h4 class="mt-4 uppercase font-semibold">Oti Badmus</h4>
+      <span class="text-sm text-blue-600 font-bold">Company Ambassador</span>
+    </div>
+
+    <div class="text-center hover:scale-105 transition">
+      <img src="image/team2.png" class="w-full h-72 object-contain rounded-lg shadow" />
+      <h4 class="mt-4 uppercase font-semibold">Goodnews Blessing</h4>
+      <span class="text-sm text-blue-600 font-bold">Managing Director</span>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= VISIONS ================= -->
+<section class="bg-blue-600 text-white py-16 mb-4">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 px-6 text-center">
+
+    <div class="hover:-translate-y-2 transition">
+      <h3 class="text-2xl font-bold mb-4 uppercase">Our Vision</h3>
+      <p>
+        We are dedicated to building a population and community of individuals with enhanced
+        fashion sense and satisfactory fashion response.
+      </p>
+    </div>
+
+    <div class="hover:-translate-y-2 transition">
+      <h3 class="text-2xl font-bold mb-4 uppercase">Our Goals</h3>
+      <p>
+        Our primary goal is to dominate the market with quality products that meet customer
+        needs and contribute to socio-economic growth.
+      </p>
+    </div>
+
+    <div class="hover:-translate-y-2 transition">
+      <h3 class="text-2xl font-bold mb-4 uppercase">Our Core Values</h3>
+      <p>
+        We value unity in fashion and elegance that commands respect. You don't have to be
+        Elon Musk to look good.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="bg-black text-white py-16">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 px-6">
+
+    <div>
+      <h3 class="text-blue-200 text-3xl font-bold uppercase mb-4">E-Joe Store</h3>
+      <p class="text-sm leading-relaxed">
+        Over three million collections for you to pick from with fast delivery services that
+        span across nations. Experience exquisite elegance with Ejoe-Fashion.
+      </p>
+    </div>
+
+    <div>
+      <h3 class="text-2xl font-bold mb-4 uppercase">Quick Links</h3>
+      <ul class="space-y-2">
+        <li><a href="index.html" class="hover:text-blue-200">Home</a></li>
+        <li><a href="service.html" class="hover:text-blue-200">Service</a></li>
+        <li><a href="about-us.html" class="hover:text-blue-200">About Us</a></li>
+        <li><a href="contact-us.html" class="hover:text-blue-200">Contact</a></li>
+        <li><a href="blog.html" class="hover:text-blue-200">News</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h3 class="text-2xl font-bold mb-4 uppercase">Gallery</h3>
+      <div class="grid grid-cols-2 gap-4">
+        <img src="image/gal1.webp" class="w-full h-24 object-cover rounded" />
+        <img src="image/gal2.webp" class="w-full h-24 object-cover rounded" />
+        <img src="image/gal3.png" class="w-full h-24 object-cover rounded" />
+        <img src="image/gal4.png" class="w-full h-24 object-cover rounded" />
+      </div>
+    </div>
+
+  </div>
+</footer>
+<script>
+  const menuBtn = document.getElementById('menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  menuBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+</script>
+
+</body>
+</html>
